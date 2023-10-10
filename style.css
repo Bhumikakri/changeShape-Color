@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(194,114,247,1) 6%, rgba(4,8,124,1) 43%, rgba(246,35,35,1) 80%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: aliceblue;
+    border-bottom: 3px dotted white;
+}
+#circle{
+    width:200px;
+    height: 200px;
+    background-color: blue;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    color: darkred;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    border: none;
+    background-color: rgb(133, 255, 214);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px gray;
+}
+.shap1{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(255, 115, 0);
+}
+.triangle{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(78, 2, 2);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: press 0.5s ease;
+}
+.parallel{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(166, 255, 0);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    
+}
+.star{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(255, 0, 149);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: press 0.3s ease;
+}
+.close{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(0, 255, 191);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+.hexagon{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(32, 13, 136);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    animation: press 0.5s ease;
+    
+}
+.cross{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(163, 130, 20);
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    
+}
+.pentagon{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(158, 185, 35);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    animation: press 0.5s ease;
+}
+.circleMini{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(225, 0, 255);
+    clip-path: circle(50% at 50% 50%);
+}
+.button{
+    color: rgb(250, 246, 246);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    border: none;
+    background-color: rgb(133, 255, 214);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px gray;
+    background: linear-gradient(90deg, rgb(67, 7, 107) 0%, rgb(18, 247, 163) 100%, rgb(235, 190, 127) 100%);
+    animation: press 0.5s ease;
+}
+
+@keyframes press {
+    0% {
+        transform: scale(1.1); 
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);  
+    }
+}
